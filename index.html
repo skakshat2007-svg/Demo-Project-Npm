@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is Even — NPM Package Demo</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ─── HEADER ─── -->
+    <header class="site-header">
+      <div class="badge">
+        <svg class="npm-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M0 0v24h24V0H0zm19.2 19.2H12v-9.6H7.2v9.6H4.8V4.8h14.4v14.4z"/>
+        </svg>
+        npm package demo
+      </div>
+      <h1>Is Even — NPM Package Demo</h1>
+      <p class="subtitle">
+        Powered by <a href="https://www.npmjs.com/package/is-even-clone" target="_blank" rel="noopener">is-even-clone</a>
+        — a beginner-friendly npm utility that checks whether a number is even.
+      </p>
+    </header>
+
+    <!-- ─── MAIN ─── -->
+    <main class="container">
+
+      <!-- CHECKER CARD -->
+      <section class="card checker-card" aria-label="Even / Odd Checker">
+        <h2 class="card-title">
+          <span class="icon">🔢</span> Even / Odd Checker
+        </h2>
+
+        <div class="input-group">
+          <label for="numberInput" class="sr-only">Enter a number</label>
+          <input
+            id="numberInput"
+            type="number"
+            placeholder="Enter any integer (e.g. 4, 7, -2, 0)"
+            autocomplete="off"
+            aria-describedby="result"
+          />
+          <button id="checkBtn" class="btn btn-primary" type="button">
+            Check
+          </button>
+        </div>
+
+        <!-- Result area -->
+        <div id="result" class="result hidden" aria-live="polite" role="status"></div>
+
+        <!-- Reset link -->
+        <div class="reset-row hidden" id="resetRow">
+          <button id="resetBtn" class="btn-link" type="button">
+            ↩ Check another number
+          </button>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS CARD -->
+      <section class="card how-card" aria-label="How it works">
+        <h2 class="card-title">
+          <span class="icon">⚙️</span> How It Works
+        </h2>
+        <p>This demo installs and calls the <code>is-even-clone</code> npm package directly:</p>
+        <pre class="code-block"><code><span class="c">// Install</span>
+npm install is-even-clone
+
+<span class="c">// Import</span>
+<span class="kw">import</span> isEven <span class="kw">from</span> <span class="str">'is-even-clone'</span>;
+
+<span class="c">// Use</span>
+isEven(<span class="num">4</span>);   <span class="c">// → true</span>
+isEven(<span class="num">7</span>);   <span class="c">// → false</span>
+isEven(<span class="num">-2</span>);  <span class="c">// → true</span>
+isEven(<span class="num">0</span>);   <span class="c">// → true</span></code></pre>
+      </section>
+
+      <!-- EXAMPLES CARD -->
+      <section class="card examples-card" aria-label="Live examples">
+        <h2 class="card-title">
+          <span class="icon">✨</span> Live Examples
+        </h2>
+        <p>Click any example to see the result instantly:</p>
+        <div class="examples-grid" id="examplesGrid">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- PACKAGE INFO CARD -->
+      <section class="card info-card" aria-label="Package information">
+        <h2 class="card-title">
+          <span class="icon">📦</span> Package Info
+        </h2>
+        <dl class="info-list">
+          <div class="info-row">
+            <dt>Package name</dt>
+            <dd><code>is-even-clone</code></dd>
+          </div>
+          <div class="info-row">
+            <dt>Version</dt>
+            <dd><code>1.0.0</code></dd>
+          </div>
+          <div class="info-row">
+            <dt>Install command</dt>
+            <dd><code>npm install is-even-clone</code></dd>
+          </div>
+          <div class="info-row">
+            <dt>npm registry</dt>
+            <dd>
+              <a href="https://www.npmjs.com/package/is-even-clone" target="_blank" rel="noopener">
+                npmjs.com/package/is-even-clone ↗
+              </a>
+            </dd>
+          </div>
+          <div class="info-row">
+            <dt>Source code</dt>
+            <dd>
+              <a href="https://github.com/skakshar2007-svg/NPM-package-" target="_blank" rel="noopener">
+                github.com/skakshar2007-svg/NPM-package- ↗
+              </a>
+            </dd>
+          </div>
+          <div class="info-row">
+            <dt>License</dt>
+            <dd>MIT</dd>
+          </div>
+        </dl>
+      </section>
+
+    </main>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="site-footer">
+      <p>
+        Built with <a href="https://vitejs.dev" target="_blank" rel="noopener">Vite</a>
+        · Uses
+        <a href="https://www.npmjs.com/package/is-even-clone" target="_blank" rel="noopener">is-even-clone@1.0.0</a>
+        from npm
+        · College assignment demo by <strong>skakshar2007-svg</strong>
+      </p>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "is-even-npm-demo",
+  "version": "1.0.0",
+  "description": "Demo project for the is-even-clone npm package — college assignment",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "is-even-clone": "^1.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "skakshar2007-svg",
+  "license": "MIT"
+}
