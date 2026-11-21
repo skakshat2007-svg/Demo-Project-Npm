@@ -4,7 +4,7 @@ A modern, responsive demo website built for a college assignment demonstrating t
 
 ## 🚀 Live Demo & Links
 
-- **Live Deployed Demo:** [Deployed Link](https://demo-project-npm.vercel.app/) *(or GitHub Pages / Netlify)*
+- **Live Deployed Demo:** [https://skakshat2007-svg.github.io/Demo-Project-Npm/](https://skakshat2007-svg.github.io/Demo-Project-Npm/)
 - **Demo GitHub Repository:** [https://github.com/skakshat2007-svg/Demo-Project-Npm](https://github.com/skakshat2007-svg/Demo-Project-Npm)
 - **Original NPM Package Repository:** [https://github.com/skakshar2007-svg/NPM-package-](https://github.com/skakshar2007-svg/NPM-package-)
 - **NPM Package Registry:** [https://www.npmjs.com/package/is-even-clone](https://www.npmjs.com/package/is-even-clone)
